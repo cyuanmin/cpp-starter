@@ -5,6 +5,6 @@ set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/../bin")
 set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/../bin")
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_SOURCE_DIR}/../bin")
 
-add_subdirectory(model_lib)
-add_subdirectory(app)
+add_subdirectory(src/model_lib)
+add_subdirectory(src/app)
 add_dependencies(app model_lib)
