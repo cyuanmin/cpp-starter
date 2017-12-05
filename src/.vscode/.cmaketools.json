@@ -1,0 +1,153 @@
+{
+  "variant": {
+    "label": "Debug",
+    "keywordSettings": {
+      "buildType": "debug"
+    },
+    "description": "Emit debug information without performing optimizations"
+  },
+  "activeEnvironments": [],
+  "codeModel": {
+    "configurations": [
+      {
+        "name": "Debug",
+        "projects": [
+          {
+            "buildDirectory": "/Users/yuanming/Documents/cpp-starter/src/build",
+            "name": "cpp-starter",
+            "sourceDirectory": "/Users/yuanming/Documents/cpp-starter/src",
+            "targets": [
+              {
+                "artifacts": [
+                  "/Users/yuanming/Documents/cpp-starter/src/bin/libmodel_lib.dylib"
+                ],
+                "buildDirectory": "/Users/yuanming/Documents/cpp-starter/src/build/model_lib",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 3,
+                      "name": "add_library",
+                      "path": "/Users/yuanming/Documents/cpp-starter/src/model_lib/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/Users/yuanming/Documents/cpp-starter/src/model_lib/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 2,
+                          "name": "include_directories",
+                          "path": "/Users/yuanming/Documents/cpp-starter/src/model_lib/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/Users/yuanming/Documents/cpp-starter/src/model_lib/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    }
+                  ]
+                },
+                "fileGroups": [
+                  {
+                    "compileFlags": "-g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk -fPIC  ",
+                    "defines": [
+                      "model_lib_EXPORTS"
+                    ],
+                    "includePath": [
+                      {
+                        "path": "/Users/yuanming/Documents/cpp-starter/src/model_lib/include"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "src/model.cpp"
+                    ]
+                  }
+                ],
+                "fullName": "libmodel_lib.dylib",
+                "linkerLanguage": "CXX",
+                "name": "model_lib",
+                "sourceDirectory": "/Users/yuanming/Documents/cpp-starter/src/model_lib",
+                "type": "SHARED_LIBRARY"
+              },
+              {
+                "artifacts": [
+                  "/Users/yuanming/Documents/cpp-starter/src/bin/app"
+                ],
+                "buildDirectory": "/Users/yuanming/Documents/cpp-starter/src/build/app",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 2,
+                      "name": "add_executable",
+                      "path": "/Users/yuanming/Documents/cpp-starter/src/app/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/Users/yuanming/Documents/cpp-starter/src/app/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 3,
+                          "name": "include_directories",
+                          "path": "/Users/yuanming/Documents/cpp-starter/src/app/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/Users/yuanming/Documents/cpp-starter/src/app/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 4,
+                          "name": "target_link_libraries",
+                          "path": "/Users/yuanming/Documents/cpp-starter/src/app/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/Users/yuanming/Documents/cpp-starter/src/app/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    }
+                  ]
+                },
+                "fileGroups": [
+                  {
+                    "compileFlags": "-g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk  ",
+                    "includePath": [
+                      {
+                        "path": "/Users/yuanming/Documents/cpp-starter/src/model_lib/include"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "main.cpp"
+                    ]
+                  }
+                ],
+                "fullName": "app",
+                "linkLanguageFlags": "-g",
+                "linkLibraries": "-Wl,-rpath,/Users/yuanming/Documents/cpp-starter/src/bin ../../bin/libmodel_lib.dylib",
+                "linkerLanguage": "CXX",
+                "name": "app",
+                "sourceDirectory": "/Users/yuanming/Documents/cpp-starter/src/app",
+                "type": "EXECUTABLE"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "cookie": "0.025800174863632508",
+    "inReplyTo": "codemodel",
+    "type": "reply"
+  }
+}
