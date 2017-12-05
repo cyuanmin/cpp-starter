@@ -46,6 +46,32 @@
                         }
                       ],
                       "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 4,
+                          "name": "include_directories",
+                          "path": "/Users/yuanming/Documents/cpp-starter/src/model_lib/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/Users/yuanming/Documents/cpp-starter/src/model_lib/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 5,
+                          "name": "target_link_libraries",
+                          "path": "/Users/yuanming/Documents/cpp-starter/src/model_lib/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/Users/yuanming/Documents/cpp-starter/src/model_lib/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
                     }
                   ]
                 },
@@ -58,6 +84,9 @@
                     "includePath": [
                       {
                         "path": "/Users/yuanming/Documents/cpp-starter/src/model_lib/include"
+                      },
+                      {
+                        "path": "/Users/yuanming/Documents/cpp-starter/src/model_lib/../model_static/include"
                       }
                     ],
                     "isGenerated": false,
@@ -68,6 +97,7 @@
                   }
                 ],
                 "fullName": "libmodel_lib.dylib",
+                "linkLibraries": "../../../bin/libmodel_static.a",
                 "linkerLanguage": "CXX",
                 "name": "model_lib",
                 "sourceDirectory": "/Users/yuanming/Documents/cpp-starter/src/model_lib",
@@ -228,7 +258,7 @@
         ]
       }
     ],
-    "cookie": "0.3830234750862753",
+    "cookie": "0.21118630432675833",
     "inReplyTo": "codemodel",
     "type": "reply"
   }

@@ -1,3 +1,5 @@
 cmake_minimum_required(VERSION 3.6.2)
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
 add_library(model_lib SHARED src/model.cpp)
+include_directories(${CMAKE_CURRENT_SOURCE_DIR}/../model_static/include)
+target_link_libraries(model_lib model_static)
