@@ -9,7 +9,9 @@
                 "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
                 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include",
                 "${workspaceRoot}",
-                "${workspaceRoot}/src/common"
+                "${workspaceRoot}/src/common",
+                "${workspaceRoot}/src/model_static/include",
+                "${workspaceRoot}/src/model_lib/include"
             ],
             "defines": [],
             "intelliSenseMode": "clang-x64",

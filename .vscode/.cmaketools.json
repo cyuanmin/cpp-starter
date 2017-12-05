@@ -75,6 +75,59 @@
               },
               {
                 "artifacts": [
+                  "/Users/yuanming/Documents/cpp-starter/bin/libmodel_static.a"
+                ],
+                "buildDirectory": "/Users/yuanming/Documents/cpp-starter/build/src/model_static",
+                "crossReferences": {
+                  "backtrace": [
+                    {
+                      "line": 3,
+                      "name": "add_library",
+                      "path": "/Users/yuanming/Documents/cpp-starter/src/model_static/CMakeLists.txt"
+                    },
+                    {
+                      "path": "/Users/yuanming/Documents/cpp-starter/src/model_static/CMakeLists.txt"
+                    }
+                  ],
+                  "relatedStatements": [
+                    {
+                      "backtrace": [
+                        {
+                          "line": 2,
+                          "name": "include_directories",
+                          "path": "/Users/yuanming/Documents/cpp-starter/src/model_static/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/Users/yuanming/Documents/cpp-starter/src/model_static/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    }
+                  ]
+                },
+                "fileGroups": [
+                  {
+                    "compileFlags": "-g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk  ",
+                    "includePath": [
+                      {
+                        "path": "/Users/yuanming/Documents/cpp-starter/src/model_static/include"
+                      }
+                    ],
+                    "isGenerated": false,
+                    "language": "CXX",
+                    "sources": [
+                      "src/helper.cpp"
+                    ]
+                  }
+                ],
+                "fullName": "libmodel_static.a",
+                "linkerLanguage": "CXX",
+                "name": "model_static",
+                "sourceDirectory": "/Users/yuanming/Documents/cpp-starter/src/model_static",
+                "type": "STATIC_LIBRARY"
+              },
+              {
+                "artifacts": [
                   "/Users/yuanming/Documents/cpp-starter/bin/app"
                 ],
                 "buildDirectory": "/Users/yuanming/Documents/cpp-starter/build/src/app",
@@ -107,6 +160,32 @@
                       "backtrace": [
                         {
                           "line": 4,
+                          "name": "include_directories",
+                          "path": "/Users/yuanming/Documents/cpp-starter/src/app/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/Users/yuanming/Documents/cpp-starter/src/app/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_include_directories"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 5,
+                          "name": "target_link_libraries",
+                          "path": "/Users/yuanming/Documents/cpp-starter/src/app/CMakeLists.txt"
+                        },
+                        {
+                          "path": "/Users/yuanming/Documents/cpp-starter/src/app/CMakeLists.txt"
+                        }
+                      ],
+                      "type": "target_link_libraries"
+                    },
+                    {
+                      "backtrace": [
+                        {
+                          "line": 5,
                           "name": "target_link_libraries",
                           "path": "/Users/yuanming/Documents/cpp-starter/src/app/CMakeLists.txt"
                         },
@@ -124,6 +203,9 @@
                     "includePath": [
                       {
                         "path": "/Users/yuanming/Documents/cpp-starter/src/app/../model_lib/include"
+                      },
+                      {
+                        "path": "/Users/yuanming/Documents/cpp-starter/src/app/../model_static/include"
                       }
                     ],
                     "isGenerated": false,
@@ -135,7 +217,7 @@
                 ],
                 "fullName": "app",
                 "linkLanguageFlags": "-g",
-                "linkLibraries": "-Wl,-rpath,/Users/yuanming/Documents/cpp-starter/bin ../../../bin/libmodel_lib.dylib",
+                "linkLibraries": "-Wl,-rpath,/Users/yuanming/Documents/cpp-starter/bin ../../../bin/libmodel_lib.dylib ../../../bin/libmodel_static.a",
                 "linkerLanguage": "CXX",
                 "name": "app",
                 "sourceDirectory": "/Users/yuanming/Documents/cpp-starter/src/app",
@@ -146,7 +228,7 @@
         ]
       }
     ],
-    "cookie": "0.869778983457272",
+    "cookie": "0.3830234750862753",
     "inReplyTo": "codemodel",
     "type": "reply"
   }
